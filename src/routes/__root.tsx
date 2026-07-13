@@ -72,26 +72,32 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+import impulseLogo from "../assets/impulse-logo.asset.json";
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { name: "theme-color", content: "#06111F" },
+      { title: "Impulse Assessoria × Gráfica Certa" },
+      {
+        name: "description",
+        content:
+          "Apresentação estratégica da Impulse Assessoria para a Gráfica Certa.",
+      },
+      { property: "og:title", content: "Impulse Assessoria × Gráfica Certa" },
+      {
+        property: "og:description",
+        content:
+          "Uma proposta estratégica de marketing, presença digital e aquisição de clientes para a Gráfica Certa.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: impulseLogo.url, type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
