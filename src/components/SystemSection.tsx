@@ -175,7 +175,7 @@ const NAV = [
 
 export function SystemSection() {
   return (
-    <section id="sistema" className="py-14 md:py-20 relative overflow-hidden">
+    <section id="sistema" className="py-12 md:py-16 relative overflow-hidden">
       <div
         aria-hidden
         className="absolute inset-0 -z-10"

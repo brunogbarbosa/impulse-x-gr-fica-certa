@@ -5,6 +5,5 @@ export const NAV_LINKS = [
   { id: "sistema", label: "Sistema" },
   { id: "estrategia", label: "Estratégia" },
   { id: "implementacao", label: "Implementação" },
-  { id: "indicadores", label: "Indicadores" },
   { id: "proximos-passos", label: "Próximos passos" },
 ];

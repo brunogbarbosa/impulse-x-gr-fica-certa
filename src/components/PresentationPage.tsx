@@ -26,11 +26,12 @@ import { OPPORTUNITIES } from "@/data/opportunities";
 import { PHASES, JOURNEY_STEPS, METRICS, DELIVERABLES } from "@/data/implementation";
 import { WHATSAPP_URL } from "@/lib/contact";
 import { GRAFICA_CERTA_LOGO, IMPULSE_LOGO } from "@/assets/brand";
+import { SystemSection } from "@/components/SystemSection";
 
 /* ------------ HERO ------------ */
 function Hero() {
   return (
-    <section id="top" className="relative pt-24 md:pt-28 pb-12 md:pb-16 overflow-hidden">
+    <section id="top" className="relative pt-20 pb-10 md:pt-24 md:pb-14 overflow-hidden">
       <div
         aria-hidden
         className="absolute inset-0 -z-10"
@@ -38,14 +39,14 @@ function Hero() {
       />
       <div aria-hidden className="absolute inset-0 -z-10 grid-bg opacity-40" />
 
-      <div className="container-page grid gap-8 lg:grid-cols-[1.02fr_0.92fr] lg:items-center">
+      <div className="container-page grid gap-7 lg:grid-cols-[1.02fr_0.9fr] lg:items-center">
         <div>
           <div className="inline-flex items-center gap-2 rounded-full hairline bg-white/[0.03] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--accent-soft)]">
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
             Proposta estratégica personalizada
           </div>
 
-          <h1 className="mt-4 text-[32px] leading-[1.06] font-bold tracking-tight md:text-[46px] lg:text-[54px]">
+          <h1 className="mt-4 text-[30px] leading-[1.06] font-bold tracking-tight md:text-[42px] lg:text-[50px]">
             Uma estrutura de <span className="text-gradient-brand">crescimento</span> criada para a
             Gráfica Certa
           </h1>
@@ -113,7 +114,7 @@ function StartingPoint() {
     },
   ];
   return (
-    <section id="visao-geral" className="py-14 md:py-20">
+    <section id="visao-geral" className="py-12 md:py-16">
       <div className="container-page">
         <SectionHeading
           eyebrow="Ponto de partida"
@@ -158,7 +159,7 @@ function StartingPoint() {
 /* ------------ OPORTUNIDADES ------------ */
 function Opportunities() {
   return (
-    <section id="oportunidades" className="py-14 md:py-20 bg-[var(--bg-2)]">
+    <section id="oportunidades" className="py-12 md:py-16 bg-[var(--bg-2)]">
       <div className="container-page">
         <SectionHeading
           eyebrow="Diagnóstico"
@@ -204,7 +205,7 @@ function Opportunities() {
 function Services() {
   const flow = ["Atrair", "Apresentar", "Convencer", "Qualificar", "Orçar", "Fechar", "Fidelizar"];
   return (
-    <section id="solucoes" className="py-14 md:py-20">
+    <section id="solucoes" className="py-12 md:py-16">
       <div className="container-page">
         <SectionHeading
           eyebrow="Como a Impulse se encaixa"
@@ -382,7 +383,7 @@ function DigitalStructure() {
     "Soluções corporativas",
   ];
   return (
-    <section id="estrategia" className="py-14 md:py-20">
+    <section id="estrategia" className="py-12 md:py-16">
       <div className="container-page">
         <SectionHeading
           eyebrow="Presença digital"
@@ -514,7 +515,7 @@ function Journey() {
 /* ------------ IMPLEMENTAÇÃO ------------ */
 function Implementation() {
   return (
-    <section id="implementacao" className="py-14 md:py-20">
+    <section id="implementacao" className="py-12 md:py-16">
       <div className="container-page">
         <SectionHeading
           eyebrow="Plano de implementação"
@@ -732,7 +733,7 @@ function NextSteps() {
     },
   ];
   return (
-    <section id="proximos-passos" className="py-14 md:py-20 bg-[var(--bg-2)]">
+    <section id="proximos-passos" className="py-12 md:py-16 bg-[var(--bg-2)]">
       <div className="container-page">
         <SectionHeading
           eyebrow="Próximos passos"
@@ -827,8 +828,6 @@ function FinalCta() {
   );
 }
 
-import { SystemSection } from "@/components/SystemSection";
-
 export function PresentationPage() {
   return (
     <>
@@ -837,16 +836,9 @@ export function PresentationPage() {
       <Opportunities />
       <Services />
       <SystemSection />
-      <PracticalExamples />
       <DigitalStructure />
-      <Journey />
       <Implementation />
-      <Indicators />
-      <Deliverables />
-      <WhyImpulse />
-      <FutureVision />
       <NextSteps />
-      <FinalCta />
     </>
   );
 }
