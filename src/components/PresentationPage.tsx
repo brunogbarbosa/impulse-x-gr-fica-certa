@@ -56,7 +56,7 @@ function Hero() {
             transformar buscas, acessos e interações em solicitações de orçamento.
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-2.5">
+          <div className="mt-6 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
             <a href="#solucoes" className="btn-primary btn-primary-hover">
               Conhecer a estratégia <ArrowRight size={16} />
             </a>
@@ -70,11 +70,19 @@ function Hero() {
             única estrutura.
           </p>
 
-          <div className="mt-6 flex items-center gap-3">
-            <img src={IMPULSE_LOGO} alt="Impulse Assessoria" className="h-7 w-auto opacity-90" />
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <img
+              src={IMPULSE_LOGO}
+              alt="Impulse Assessoria"
+              className="h-auto w-[118px] object-contain opacity-90 sm:w-[140px]"
+            />
             <span className="text-[var(--ink-muted)]">×</span>
-            <div className="rounded-md bg-white px-3 py-1.5">
-              <img src={GRAFICA_CERTA_LOGO} alt="Gráfica Certa" className="h-6 w-auto" />
+            <div className="rounded-md bg-white px-2.5 py-1.5">
+              <img
+                src={GRAFICA_CERTA_LOGO}
+                alt="Gráfica Certa"
+                className="h-auto w-[132px] object-contain sm:w-[150px]"
+              />
             </div>
           </div>
         </div>
@@ -204,8 +212,8 @@ function Services() {
           subtitle="Cada serviço da Impulse ocupa uma função específica dentro da jornada de aquisição e conversão de clientes."
         />
 
-        <div className="mt-7 overflow-x-auto">
-          <div className="flex items-center gap-2 min-w-max py-2">
+        <div className="mt-7 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex min-w-max items-center gap-2 py-2 pr-4">
             {flow.map((step, i) => (
               <div key={step} className="flex items-center gap-2">
                 <span className="rounded-full hairline bg-white/[0.03] px-3.5 py-1.5 text-sm text-[var(--ink-dim)]">
@@ -380,7 +388,7 @@ function DigitalStructure() {
           eyebrow="Presença digital"
           title="Como a presença digital da Gráfica Certa pode ser organizada"
         />
-        <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_1fr]">
+        <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_1fr]">
           {/* Mockup */}
           <div className="glass-card rounded-2xl p-4 md:p-5">
             <div className="flex items-center gap-1.5 mb-3">
@@ -417,7 +425,7 @@ function DigitalStructure() {
                     Ver portfólio
                   </span>
                 </div>
-                <div className="mt-5 grid grid-cols-4 gap-1.5">
+                <div className="mt-5 grid grid-cols-2 gap-1.5 sm:grid-cols-4">
                   {categories.slice(0, 4).map((c) => (
                     <div
                       key={c}
@@ -779,10 +787,18 @@ function FinalCta() {
       />
       <div className="container-page text-center">
         <div className="inline-flex items-center gap-4 mb-8">
-          <img src={IMPULSE_LOGO} alt="Impulse Assessoria" className="h-8 w-auto" />
+          <img
+            src={IMPULSE_LOGO}
+            alt="Impulse Assessoria"
+            className="h-auto w-[138px] object-contain"
+          />
           <span className="text-[var(--ink-muted)]">×</span>
           <div className="rounded-md bg-white px-3 py-1.5">
-            <img src={GRAFICA_CERTA_LOGO} alt="Gráfica Certa" className="h-6 w-auto" />
+            <img
+              src={GRAFICA_CERTA_LOGO}
+              alt="Gráfica Certa"
+              className="h-auto w-[148px] object-contain"
+            />
           </div>
         </div>
         <h2 className="text-2xl md:text-4xl font-bold leading-tight max-w-3xl mx-auto">

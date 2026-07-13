@@ -252,12 +252,16 @@ export function SystemSection() {
               </div>
             </div>
 
-            <div className="grid grid-cols-[64px_1fr] md:grid-cols-[220px_1fr]">
+            <div className="grid md:grid-cols-[220px_1fr]">
               {/* Sidebar */}
-              <aside className="border-r border-[var(--border-soft)] bg-[#040a13] p-3 md:p-4">
+              <aside className="hidden border-r border-[var(--border-soft)] bg-[#040a13] p-3 md:block md:p-4">
                 <div className="hidden md:flex items-center gap-2 px-2 mb-6">
                   <div className="rounded bg-white px-1.5 py-1">
-                    <img src={GRAFICA_CERTA_LOGO} alt="" className="h-4 w-auto" />
+                    <img
+                      src={GRAFICA_CERTA_LOGO}
+                      alt=""
+                      className="h-auto w-[86px] object-contain"
+                    />
                   </div>
                   <span className="text-[10px] font-semibold tracking-widest text-[var(--ink-muted)]">
                     GESTÃO
@@ -311,7 +315,7 @@ export function SystemSection() {
                 </div>
 
                 {/* KPI Row */}
-                <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
                   {KPIS.map((k) => (
                     <div
                       key={k.label}
@@ -348,8 +352,8 @@ export function SystemSection() {
                       Ver todos <ArrowUpRight size={11} />
                     </button>
                   </div>
-                  <div className="overflow-x-auto -mx-4 md:-mx-6 px-4 md:px-6">
-                    <div className="grid grid-cols-[repeat(4,minmax(220px,1fr))] gap-3 min-w-max lg:min-w-0">
+                  <div>
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                       {KANBAN.map((col) => (
                         <div
                           key={col.title}

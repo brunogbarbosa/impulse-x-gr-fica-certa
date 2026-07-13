@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-[var(--border-soft)] bg-[var(--bg-2)]">
       <div className="container-page py-14 grid gap-10 md:grid-cols-3">
         <div>
-          <img src={IMPULSE_LOGO} alt="Impulse Assessoria" className="h-8 w-auto mb-4" />
+          <img src={IMPULSE_LOGO} alt="Impulse Assessoria" className="mb-4 h-auto w-[150px]" />
           <p className="text-sm text-[var(--ink-muted)] leading-relaxed">
             Apresentação estratégica desenvolvida exclusivamente para a Gráfica Certa.
           </p>
