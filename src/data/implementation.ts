@@ -59,15 +59,35 @@ export const PHASES: Phase[] = [
 ];
 
 export const JOURNEY_STEPS = [
-  { title: "Descoberta", description: "O potencial cliente encontra a Gráfica Certa no Google, nas redes sociais, por indicação ou por meio de uma campanha." },
-  { title: "Interesse", description: "Ele visualiza um serviço, aplicação ou solução compatível com sua necessidade." },
-  { title: "Consideração", description: "Acessa o site, analisa os trabalhos, entende os diferenciais e verifica as possibilidades." },
+  {
+    title: "Descoberta",
+    description:
+      "O potencial cliente encontra a Gráfica Certa no Google, nas redes sociais, por indicação ou por meio de uma campanha.",
+  },
+  {
+    title: "Interesse",
+    description: "Ele visualiza um serviço, aplicação ou solução compatível com sua necessidade.",
+  },
+  {
+    title: "Consideração",
+    description:
+      "Acessa o site, analisa os trabalhos, entende os diferenciais e verifica as possibilidades.",
+  },
   { title: "Contato", description: "Solicita um orçamento pelo WhatsApp ou formulário." },
-  { title: "Qualificação", description: "A equipe coleta as informações necessárias para compreender a demanda." },
+  {
+    title: "Qualificação",
+    description: "A equipe coleta as informações necessárias para compreender a demanda.",
+  },
   { title: "Orçamento", description: "O cliente recebe uma proposta clara e profissional." },
-  { title: "Acompanhamento", description: "Os contatos que ainda não decidiram são acompanhados de maneira organizada." },
+  {
+    title: "Acompanhamento",
+    description: "Os contatos que ainda não decidiram são acompanhados de maneira organizada.",
+  },
   { title: "Fechamento", description: "O orçamento é transformado em pedido." },
-  { title: "Recorrência", description: "Após a entrega, o relacionamento continua para gerar futuras compras." },
+  {
+    title: "Recorrência",
+    description: "Após a entrega, o relacionamento continua para gerar futuras compras.",
+  },
 ];
 
 export const METRICS = [

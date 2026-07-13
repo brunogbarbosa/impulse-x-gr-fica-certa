@@ -23,10 +23,38 @@ import graficaLogo from "@/assets/grafica-certa-logo.asset.json";
 
 /* Fake but plausible data — clearly framed as an illustrative mockup */
 const KPIS = [
-  { label: "Orçamentos no mês", value: "—", hint: "Pipeline", delta: "+ acompanhar", icon: FileText, up: true },
-  { label: "Pedidos em produção", value: "18", hint: "Hoje", delta: "5 hoje", icon: Factory, up: true },
-  { label: "Taxa de fechamento", value: "—", hint: "Últimos 30 dias", delta: "meta", icon: TrendingUp, up: true },
-  { label: "Ticket médio", value: "—", hint: "Ilustrativo", delta: "a calibrar", icon: Wallet, up: false },
+  {
+    label: "Orçamentos no mês",
+    value: "—",
+    hint: "Pipeline",
+    delta: "+ acompanhar",
+    icon: FileText,
+    up: true,
+  },
+  {
+    label: "Pedidos em produção",
+    value: "18",
+    hint: "Hoje",
+    delta: "5 hoje",
+    icon: Factory,
+    up: true,
+  },
+  {
+    label: "Taxa de fechamento",
+    value: "—",
+    hint: "Últimos 30 dias",
+    delta: "meta",
+    icon: TrendingUp,
+    up: true,
+  },
+  {
+    label: "Ticket médio",
+    value: "—",
+    hint: "Ilustrativo",
+    delta: "a calibrar",
+    icon: Wallet,
+    up: false,
+  },
 ];
 
 const KANBAN: {
@@ -38,8 +66,20 @@ const KANBAN: {
     title: "Arte / Aprovação",
     color: "var(--accent)",
     cards: [
-      { id: "#4821", client: "Padaria São Bento", product: "Cardápio A4", qty: "50 un", due: "hoje" },
-      { id: "#4820", client: "Clínica Vitta", product: "Cartões de visita", qty: "1.000 un", due: "2d" },
+      {
+        id: "#4821",
+        client: "Padaria São Bento",
+        product: "Cardápio A4",
+        qty: "50 un",
+        due: "hoje",
+      },
+      {
+        id: "#4820",
+        client: "Clínica Vitta",
+        product: "Cartões de visita",
+        qty: "1.000 un",
+        due: "2d",
+      },
     ],
   },
   {
@@ -55,24 +95,66 @@ const KANBAN: {
     title: "Acabamento",
     color: "#a78bfa",
     cards: [
-      { id: "#4812", client: "Escola Nova Era", product: "Panfleto A5", qty: "5.000 un", due: "hoje" },
+      {
+        id: "#4812",
+        client: "Escola Nova Era",
+        product: "Panfleto A5",
+        qty: "5.000 un",
+        due: "hoje",
+      },
     ],
   },
   {
     title: "Pronto p/ entrega",
     color: "var(--success)",
     cards: [
-      { id: "#4809", client: "Restaurante Prata", product: "Cardápio couché", qty: "80 un", due: "ok" },
-      { id: "#4808", client: "Ótica Visão", product: "Sacolas personalizadas", qty: "500 un", due: "ok" },
+      {
+        id: "#4809",
+        client: "Restaurante Prata",
+        product: "Cardápio couché",
+        qty: "80 un",
+        due: "ok",
+      },
+      {
+        id: "#4808",
+        client: "Ótica Visão",
+        product: "Sacolas personalizadas",
+        qty: "500 un",
+        due: "ok",
+      },
     ],
   },
 ];
 
 const QUOTES = [
-  { id: "OR-2381", client: "Condomínio Alfa", item: "Sinalização interna", status: "Aguardando cliente", tone: "warn" },
-  { id: "OR-2380", client: "Academia Force", item: "Banners promocionais", status: "Enviado", tone: "info" },
-  { id: "OR-2378", client: "Igreja Central", item: "Panfleto de evento", status: "Aprovado", tone: "ok" },
-  { id: "OR-2376", client: "Loja Bella", item: "Cartão fidelidade", status: "Em análise", tone: "muted" },
+  {
+    id: "OR-2381",
+    client: "Condomínio Alfa",
+    item: "Sinalização interna",
+    status: "Aguardando cliente",
+    tone: "warn",
+  },
+  {
+    id: "OR-2380",
+    client: "Academia Force",
+    item: "Banners promocionais",
+    status: "Enviado",
+    tone: "info",
+  },
+  {
+    id: "OR-2378",
+    client: "Igreja Central",
+    item: "Panfleto de evento",
+    status: "Aprovado",
+    tone: "ok",
+  },
+  {
+    id: "OR-2376",
+    client: "Loja Bella",
+    item: "Cartão fidelidade",
+    status: "Em análise",
+    tone: "muted",
+  },
 ] as const;
 
 const toneStyles: Record<string, string> = {
@@ -93,7 +175,7 @@ const NAV = [
 
 export function SystemSection() {
   return (
-    <section id="sistema" className="py-20 md:py-28 relative overflow-hidden">
+    <section id="sistema" className="py-14 md:py-20 relative overflow-hidden">
       <div
         aria-hidden
         className="absolute inset-0 -z-10"
@@ -108,7 +190,8 @@ export function SystemSection() {
           eyebrow="Tecnologia proprietária"
           title={
             <>
-              Um <span className="text-gradient-brand">sistema de gestão</span> pensado para a rotina da gráfica
+              Um <span className="text-gradient-brand">sistema de gestão</span> pensado para a
+              rotina da gráfica
             </>
           }
           subtitle="Mais do que marketing: a Impulse pode construir uma plataforma para centralizar orçamentos, pedidos, produção, clientes e indicadores em um só lugar — conectada ao WhatsApp e ao site, com dados prontos para decisões comerciais."
@@ -117,9 +200,21 @@ export function SystemSection() {
         {/* Feature strip */}
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { icon: ClipboardList, t: "Pedidos organizados", d: "Todo pedido em um lugar, com histórico e status." },
-            { icon: Factory, t: "Produção visível", d: "Kanban da arte à entrega, sem planilha perdida." },
-            { icon: FileText, t: "Orçamentos rápidos", d: "Modelos prontos e envio direto ao cliente." },
+            {
+              icon: ClipboardList,
+              t: "Pedidos organizados",
+              d: "Todo pedido em um lugar, com histórico e status.",
+            },
+            {
+              icon: Factory,
+              t: "Produção visível",
+              d: "Kanban da arte à entrega, sem planilha perdida.",
+            },
+            {
+              icon: FileText,
+              t: "Orçamentos rápidos",
+              d: "Modelos prontos e envio direto ao cliente.",
+            },
             { icon: Users, t: "CRM integrado", d: "Cada contato do WhatsApp vira oportunidade." },
           ].map((f) => (
             <div key={f.t} className="glass-card rounded-xl p-4">
@@ -135,7 +230,7 @@ export function SystemSection() {
         </div>
 
         {/* Dashboard mockup */}
-        <div className="mt-10 relative">
+        <div className="mt-8 relative">
           {/* Ambient glow */}
           <div
             aria-hidden
@@ -266,9 +361,7 @@ export function SystemSection() {
                                 className="h-2 w-2 rounded-full"
                                 style={{ background: col.color }}
                               />
-                              <p className="text-[11px] font-semibold text-white">
-                                {col.title}
-                              </p>
+                              <p className="text-[11px] font-semibold text-white">{col.title}</p>
                             </div>
                             <span className="text-[10px] text-[var(--ink-muted)]">
                               {col.cards.length}
@@ -276,10 +369,7 @@ export function SystemSection() {
                           </div>
                           <div className="space-y-2">
                             {col.cards.map((c) => (
-                              <div
-                                key={c.id}
-                                className="rounded-lg hairline bg-[#081627] p-2.5"
-                              >
+                              <div key={c.id} className="rounded-lg hairline bg-[#081627] p-2.5">
                                 <div className="flex items-center justify-between">
                                   <span className="text-[10px] font-mono text-[var(--ink-muted)]">
                                     {c.id}
@@ -386,7 +476,8 @@ export function SystemSection() {
                     <div className="mt-4 flex items-center gap-2 rounded-lg border border-[var(--accent)]/25 bg-[var(--accent)]/[0.06] p-2.5">
                       <CheckCircle2 size={14} className="text-[var(--accent-soft)] shrink-0" />
                       <p className="text-[11px] text-[var(--ink-dim)] leading-snug">
-                        <span className="text-white font-semibold">3 clientes</span> podem estar prontos para recompra este mês.
+                        <span className="text-white font-semibold">3 clientes</span> podem estar
+                        prontos para recompra este mês.
                       </p>
                     </div>
                   </div>
@@ -397,7 +488,8 @@ export function SystemSection() {
         </div>
 
         <p className="mt-6 text-xs text-[var(--ink-muted)] text-center max-w-3xl mx-auto">
-          Interface ilustrativa. O sistema final é construído sob medida, considerando o fluxo real de produção, atendimento e comercial da Gráfica Certa.
+          Interface ilustrativa. O sistema final é construído sob medida, considerando o fluxo real
+          de produção, atendimento e comercial da Gráfica Certa.
         </p>
       </div>
     </section>

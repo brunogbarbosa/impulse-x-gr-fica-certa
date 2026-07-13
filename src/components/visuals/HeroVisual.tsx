@@ -1,11 +1,4 @@
-import {
-  Search,
-  MessageCircle,
-  TrendingUp,
-  Sparkles,
-  Printer,
-  Layers,
-} from "lucide-react";
+import { Search, MessageCircle, TrendingUp, Sparkles, Printer, Layers } from "lucide-react";
 
 export function HeroVisual() {
   return (
@@ -60,16 +53,14 @@ export function HeroVisual() {
               Comunicação impressa para sua empresa
             </p>
             <div className="mt-3 grid grid-cols-3 gap-1.5">
-              {["Cartões", "Banners", "Adesivos", "Fachadas", "Cardápios", "Placas"].map(
-                (t) => (
-                  <div
-                    key={t}
-                    className="rounded bg-white/[0.06] px-1.5 py-1 text-[9px] text-white/85 text-center"
-                  >
-                    {t}
-                  </div>
-                ),
-              )}
+              {["Cartões", "Banners", "Adesivos", "Fachadas", "Cardápios", "Placas"].map((t) => (
+                <div
+                  key={t}
+                  className="rounded bg-white/[0.06] px-1.5 py-1 text-[9px] text-white/85 text-center"
+                >
+                  {t}
+                </div>
+              ))}
             </div>
             <div className="mt-3 rounded bg-[var(--accent)] px-2 py-1.5 text-[10px] font-bold text-[var(--bg)] text-center">
               Solicitar orçamento

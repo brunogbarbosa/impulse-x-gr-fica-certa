@@ -19,11 +19,11 @@ export function SectionHeading({ eyebrow, title, subtitle, align = "left" }: Pro
           {eyebrow}
         </div>
       )}
-      <h2 className="mt-4 text-[30px] leading-[1.1] font-bold tracking-tight md:text-[44px]">
+      <h2 className="mt-3 text-[26px] leading-[1.12] font-bold tracking-tight md:text-[36px]">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-base md:text-lg text-[var(--ink-dim)] leading-relaxed">
+        <p className="mt-3 text-[0.95rem] md:text-base text-[var(--ink-dim)] leading-relaxed">
           {subtitle}
         </p>
       )}

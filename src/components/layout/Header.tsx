@@ -32,11 +32,7 @@ export function Header() {
     >
       <div className="container-page flex h-16 items-center justify-between md:h-20">
         <a href="#top" className="flex items-center gap-3 shrink-0" aria-label="Impulse Assessoria">
-          <img
-            src={impulseLogo.url}
-            alt="Impulse Assessoria"
-            className="h-7 md:h-8 w-auto"
-          />
+          <img src={impulseLogo.url} alt="Impulse Assessoria" className="h-7 md:h-8 w-auto" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-7">

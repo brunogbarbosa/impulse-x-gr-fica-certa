@@ -36,8 +36,7 @@ export function Footer() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 hover:text-white"
               >
-                <Instagram size={16} className="text-[var(--accent)]" />
-                @{CONTACT_CONFIG.instagram}
+                <Instagram size={16} className="text-[var(--accent)]" />@{CONTACT_CONFIG.instagram}
               </a>
             </li>
             <li>
@@ -57,7 +56,8 @@ export function Footer() {
             Proposta
           </p>
           <p className="text-sm text-[var(--ink-dim)] leading-relaxed">
-            Estratégia, criatividade, tecnologia e crescimento — construídos junto com a Gráfica Certa.
+            Estratégia, criatividade, tecnologia e crescimento — construídos junto com a Gráfica
+            Certa.
           </p>
         </div>
       </div>

@@ -65,23 +65,16 @@
   --accent-soft: #7dd3fc;
   --success: #22c55e;
 
-  --shadow-elegant: 0 20px 60px -30px rgba(56, 189, 248, 0.35),
-    0 8px 24px -12px rgba(0, 0, 0, 0.5);
-  --gradient-hero: radial-gradient(
-      1200px 600px at 15% -10%,
-      rgba(56, 189, 248, 0.18),
-      transparent 60%
-    ),
-    radial-gradient(
-      900px 500px at 100% 10%,
-      rgba(0, 41, 89, 0.55),
-      transparent 60%
-    ),
+  --shadow-elegant: 0 20px 60px -30px rgba(56, 189, 248, 0.35), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
+  --gradient-hero:
+    radial-gradient(1200px 600px at 15% -10%, rgba(56, 189, 248, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 100% 10%, rgba(0, 41, 89, 0.55), transparent 60%),
     linear-gradient(180deg, #06111f 0%, #06111f 100%);
   --gradient-brand: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 60%, #002959 100%);
 }
 
 html {
+  font-size: 15px;
   scroll-behavior: smooth;
 }
 
@@ -113,11 +106,7 @@ a {
 
 /* Utilities */
 @utility glass-card {
-  background: linear-gradient(
-    180deg,
-    rgba(15, 42, 72, 0.7) 0%,
-    rgba(11, 32, 56, 0.55) 100%
-  );
+  background: linear-gradient(180deg, rgba(15, 42, 72, 0.7) 0%, rgba(11, 32, 56, 0.55) 100%);
   border: 1px solid var(--border-soft);
   backdrop-filter: blur(10px);
 }
@@ -142,9 +131,9 @@ a {
 
 @utility container-page {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1080px;
   margin-inline: auto;
-  padding-inline: 1.25rem;
+  padding-inline: 1rem;
 }
 
 @utility btn-primary {
@@ -152,15 +141,18 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.9rem 1.4rem;
-  border-radius: 0.75rem;
+  padding: 0.72rem 1.08rem;
+  border-radius: 0.6rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: #06111f;
   background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 55%, #0ea5e9 100%);
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.55);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
 }
 @utility btn-primary-hover {
   &:hover {
@@ -175,14 +167,16 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.9rem 1.4rem;
-  border-radius: 0.75rem;
+  padding: 0.72rem 1.08rem;
+  border-radius: 0.6rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-strong);
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 @utility btn-ghost-hover {
   &:hover {
