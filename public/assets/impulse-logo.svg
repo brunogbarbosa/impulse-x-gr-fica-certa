@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="170" viewBox="0 0 820 170" role="img" aria-labelledby="title desc">
+  <title id="title">Impulse Assessoria</title>
+  <desc id="desc">Impulse Assessoria wordmark with a minimal growth symbol.</desc>
+  <rect width="820" height="170" rx="34" fill="#06111f"/>
+  <g transform="translate(42 36)">
+    <rect x="0" y="0" width="98" height="98" rx="24" fill="#38bdf8"/>
+    <path d="M27 62c17.8-2.1 30.4-11.9 38-29" fill="none" stroke="#06111f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M65 33v29H36" fill="none" stroke="#06111f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#ffffff" font-family="Inter, Arial, sans-serif">
+    <text x="168" y="80" font-size="48" font-weight="800" letter-spacing="0">Impulse</text>
+    <text x="170" y="119" font-size="25" font-weight="600" fill="#7dd3fc" letter-spacing="4">ASSESSORIA</text>
+  </g>
+</svg>

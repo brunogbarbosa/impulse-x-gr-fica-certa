@@ -1,5 +1,5 @@
 import { Instagram, Mail, MessageCircle } from "lucide-react";
-import impulseLogo from "@/assets/impulse-logo.asset.json";
+import { IMPULSE_LOGO } from "@/assets/brand";
 import { CONTACT_CONFIG, WHATSAPP_URL } from "@/lib/contact";
 
 export function Footer() {
@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-[var(--border-soft)] bg-[var(--bg-2)]">
       <div className="container-page py-14 grid gap-10 md:grid-cols-3">
         <div>
-          <img src={impulseLogo.url} alt="Impulse Assessoria" className="h-8 w-auto mb-4" />
+          <img src={IMPULSE_LOGO} alt="Impulse Assessoria" className="h-8 w-auto mb-4" />
           <p className="text-sm text-[var(--ink-muted)] leading-relaxed">
             Apresentação estratégica desenvolvida exclusivamente para a Gráfica Certa.
           </p>

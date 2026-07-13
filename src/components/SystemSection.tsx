@@ -19,7 +19,7 @@ import {
   Filter,
 } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import graficaLogo from "@/assets/grafica-certa-logo.asset.json";
+import { GRAFICA_CERTA_LOGO } from "@/assets/brand";
 
 /* Fake but plausible data — clearly framed as an illustrative mockup */
 const KPIS = [
@@ -257,7 +257,7 @@ export function SystemSection() {
               <aside className="border-r border-[var(--border-soft)] bg-[#040a13] p-3 md:p-4">
                 <div className="hidden md:flex items-center gap-2 px-2 mb-6">
                   <div className="rounded bg-white px-1.5 py-1">
-                    <img src={graficaLogo.url} alt="" className="h-4 w-auto" />
+                    <img src={GRAFICA_CERTA_LOGO} alt="" className="h-4 w-auto" />
                   </div>
                   <span className="text-[10px] font-semibold tracking-widest text-[var(--ink-muted)]">
                     GESTÃO

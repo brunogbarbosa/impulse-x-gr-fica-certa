@@ -25,8 +25,7 @@ import { SERVICES } from "@/data/services";
 import { OPPORTUNITIES } from "@/data/opportunities";
 import { PHASES, JOURNEY_STEPS, METRICS, DELIVERABLES } from "@/data/implementation";
 import { WHATSAPP_URL } from "@/lib/contact";
-import graficaLogo from "@/assets/grafica-certa-logo.asset.json";
-import impulseLogo from "@/assets/impulse-logo.asset.json";
+import { GRAFICA_CERTA_LOGO, IMPULSE_LOGO } from "@/assets/brand";
 
 /* ------------ HERO ------------ */
 function Hero() {
@@ -72,10 +71,10 @@ function Hero() {
           </p>
 
           <div className="mt-6 flex items-center gap-3">
-            <img src={impulseLogo.url} alt="Impulse Assessoria" className="h-7 w-auto opacity-90" />
+            <img src={IMPULSE_LOGO} alt="Impulse Assessoria" className="h-7 w-auto opacity-90" />
             <span className="text-[var(--ink-muted)]">×</span>
             <div className="rounded-md bg-white px-3 py-1.5">
-              <img src={graficaLogo.url} alt="Gráfica Certa" className="h-6 w-auto" />
+              <img src={GRAFICA_CERTA_LOGO} alt="Gráfica Certa" className="h-6 w-auto" />
             </div>
           </div>
         </div>
@@ -395,7 +394,7 @@ function DigitalStructure() {
             <div className="rounded-xl overflow-hidden bg-gradient-to-br from-[var(--brand)] via-[#0a2545] to-[var(--bg-2)] p-5">
               <div className="flex items-center justify-between text-[11px] text-white/70">
                 <div className="rounded bg-white px-2 py-1">
-                  <img src={graficaLogo.url} alt="" className="h-4 w-auto" />
+                  <img src={GRAFICA_CERTA_LOGO} alt="" className="h-4 w-auto" />
                 </div>
                 <nav className="hidden sm:flex gap-3">
                   {["Serviços", "Portfólio", "Empresas", "Contato"].map((n) => (
@@ -780,10 +779,10 @@ function FinalCta() {
       />
       <div className="container-page text-center">
         <div className="inline-flex items-center gap-4 mb-8">
-          <img src={impulseLogo.url} alt="Impulse Assessoria" className="h-8 w-auto" />
+          <img src={IMPULSE_LOGO} alt="Impulse Assessoria" className="h-8 w-auto" />
           <span className="text-[var(--ink-muted)]">×</span>
           <div className="rounded-md bg-white px-3 py-1.5">
-            <img src={graficaLogo.url} alt="Gráfica Certa" className="h-6 w-auto" />
+            <img src={GRAFICA_CERTA_LOGO} alt="Gráfica Certa" className="h-6 w-auto" />
           </div>
         </div>
         <h2 className="text-2xl md:text-4xl font-bold leading-tight max-w-3xl mx-auto">
