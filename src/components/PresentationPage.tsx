@@ -733,6 +733,8 @@ function FinalCta() {
   );
 }
 
+import { SystemSection } from "@/components/SystemSection";
+
 export function PresentationPage() {
   return (
     <>
@@ -740,6 +742,7 @@ export function PresentationPage() {
       <StartingPoint />
       <Opportunities />
       <Services />
+      <SystemSection />
       <PracticalExamples />
       <DigitalStructure />
       <Journey />
